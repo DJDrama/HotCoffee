@@ -8,15 +8,13 @@
 import SwiftUI
 
 struct CoffeeOrderListScreen: View {
-    let coffeeOrderListVM: CoffeeOrderListViewModel
+    
+    @Environment(CoffeeStore.self) private var coffeeStore
     @State private var isPresented: Bool = false
     
-    init(coffeeOrderListVM: CoffeeOrderListViewModel) {
-        self.coffeeOrderListVM = coffeeOrderListVM
-    }
     
     var body: some View {
-        List(coffeeOrderListVM.orders) { order in
+        List(coffeeStore.orders) { order in
             NavigationLink(value: order) {
                 Text(order.name)
             }
@@ -25,10 +23,10 @@ struct CoffeeOrderListScreen: View {
             CoffeeDetailScreen(coffeeOrder: coffeeOrder)
         })
         .task {
-            do {
-                try await coffeeOrderListVM.loadOrders()
-            } catch {
-                print(error.localizedDescription)
+            do{
+                try await coffeeStore.loadOrders()
+            }catch {
+                print(error)
             }
         }.navigationTitle("Orders")
             .toolbar(content: {
@@ -39,16 +37,15 @@ struct CoffeeOrderListScreen: View {
                 }
             })
             .sheet(isPresented: $isPresented, content: {
-                AddCoffeeOrderScreen(addOrderVM: AddOrderViewModel(httpClient: HTTPClient(), onSave: { coffeeOrder in
-                    coffeeOrderListVM.orders.append(coffeeOrder)
-                }))
+                AddCoffeeOrderScreen()
             })
     }
 }
 
 #Preview {
     NavigationStack {
-        CoffeeOrderListScreen(coffeeOrderListVM: CoffeeOrderListViewModel(httpClient: HTTPClient()))
+        CoffeeOrderListScreen()
+            .environment(CoffeeStore(httpClient: HTTPClient()))
     }
 }
 
