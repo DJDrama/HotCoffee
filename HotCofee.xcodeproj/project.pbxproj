@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D25052FC2CDB46CD00BB387E /* HotCofeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25052FB2CDB46CD00BB387E /* HotCofeeApp.swift */; };
+		D25053002CDB46E800BB387E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25052FF2CDB46E800BB387E /* Assets.xcassets */; };
+		D25053032CDB46E800BB387E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25053022CDB46E800BB387E /* Preview Assets.xcassets */; };
+		D250530B2CDB4AB400BB387E /* CoffeeOrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250530A2CDB4AB400BB387E /* CoffeeOrderListViewModel.swift */; };
+		D250530E2CDB4B0900BB387E /* CoffeeOrderListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250530D2CDB4B0900BB387E /* CoffeeOrderListScreen.swift */; };
+		D25053102CDB4BBB00BB387E /* AddOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250530F2CDB4BBB00BB387E /* AddOrderViewModel.swift */; };
+		D25053142CDB4C4000BB387E /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25053132CDB4C4000BB387E /* HttpClient.swift */; };
+		D25053172CDB4C5100BB387E /* CoffeeOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25053162CDB4C5100BB387E /* CoffeeOrder.swift */; };
+		D25053192CDB4C5E00BB387E /* AddCoffeeOrderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25053182CDB4C5E00BB387E /* AddCoffeeOrderScreen.swift */; };
+		D250531B2CDB4E0000BB387E /* CoffeeDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250531A2CDB4E0000BB387E /* CoffeeDetailScreen.swift */; };
+		D250531D2CDB4F4F00BB387E /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250531C2CDB4F4F00BB387E /* APIs.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D25052F82CDB46CD00BB387E /* HotCofee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotCofee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25052FB2CDB46CD00BB387E /* HotCofeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotCofeeApp.swift; sourceTree = "<group>"; };
+		D25052FF2CDB46E800BB387E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D25053022CDB46E800BB387E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D250530A2CDB4AB400BB387E /* CoffeeOrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeOrderListViewModel.swift; sourceTree = "<group>"; };
+		D250530D2CDB4B0900BB387E /* CoffeeOrderListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeOrderListScreen.swift; sourceTree = "<group>"; };
+		D250530F2CDB4BBB00BB387E /* AddOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewModel.swift; sourceTree = "<group>"; };
+		D25053132CDB4C4000BB387E /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		D25053162CDB4C5100BB387E /* CoffeeOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeOrder.swift; sourceTree = "<group>"; };
+		D25053182CDB4C5E00BB387E /* AddCoffeeOrderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeOrderScreen.swift; sourceTree = "<group>"; };
+		D250531A2CDB4E0000BB387E /* CoffeeDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailScreen.swift; sourceTree = "<group>"; };
+		D250531C2CDB4F4F00BB387E /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D25052F52CDB46CD00BB387E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D25052EF2CDB46CD00BB387E = {
+			isa = PBXGroup;
+			children = (
+				D25052FA2CDB46CD00BB387E /* HotCofee */,
+				D25052F92CDB46CD00BB387E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D25052F92CDB46CD00BB387E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D25052F82CDB46CD00BB387E /* HotCofee.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D25052FA2CDB46CD00BB387E /* HotCofee */ = {
+			isa = PBXGroup;
+			children = (
+				D25053152CDB4C4600BB387E /* Models */,
+				D25053122CDB4C3300BB387E /* Utils */,
+				D25053112CDB4C2B00BB387E /* Clients */,
+				D25053092CDB4AA500BB387E /* ViewModels */,
+				D250530C2CDB4AF800BB387E /* Screens */,
+				D25052FB2CDB46CD00BB387E /* HotCofeeApp.swift */,
+				D25052FF2CDB46E800BB387E /* Assets.xcassets */,
+				D25053012CDB46E800BB387E /* Preview Content */,
+			);
+			path = HotCofee;
+			sourceTree = "<group>";
+		};
+		D25053012CDB46E800BB387E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D25053022CDB46E800BB387E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D25053092CDB4AA500BB387E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D250530A2CDB4AB400BB387E /* CoffeeOrderListViewModel.swift */,
+				D250530F2CDB4BBB00BB387E /* AddOrderViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D250530C2CDB4AF800BB387E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D250530D2CDB4B0900BB387E /* CoffeeOrderListScreen.swift */,
+				D25053182CDB4C5E00BB387E /* AddCoffeeOrderScreen.swift */,
+				D250531A2CDB4E0000BB387E /* CoffeeDetailScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D25053112CDB4C2B00BB387E /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				D25053132CDB4C4000BB387E /* HttpClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		D25053122CDB4C3300BB387E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D250531C2CDB4F4F00BB387E /* APIs.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D25053152CDB4C4600BB387E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D25053162CDB4C5100BB387E /* CoffeeOrder.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D25052F72CDB46CD00BB387E /* HotCofee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D25053062CDB46E800BB387E /* Build configuration list for PBXNativeTarget "HotCofee" */;
+			buildPhases = (
+				D25052F42CDB46CD00BB387E /* Sources */,
+				D25052F52CDB46CD00BB387E /* Frameworks */,
+				D25052F62CDB46CD00BB387E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HotCofee;
+			productName = HotCofee;
+			productReference = D25052F82CDB46CD00BB387E /* HotCofee.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D25052F02CDB46CD00BB387E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					D25052F72CDB46CD00BB387E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = D25052F32CDB46CD00BB387E /* Build configuration list for PBXProject "HotCofee" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D25052EF2CDB46CD00BB387E;
+			productRefGroup = D25052F92CDB46CD00BB387E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D25052F72CDB46CD00BB387E /* HotCofee */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D25052F62CDB46CD00BB387E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25053032CDB46E800BB387E /* Preview Assets.xcassets in Resources */,
+				D25053002CDB46E800BB387E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D25052F42CDB46CD00BB387E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25053142CDB4C4000BB387E /* HttpClient.swift in Sources */,
+				D25053102CDB4BBB00BB387E /* AddOrderViewModel.swift in Sources */,
+				D25053192CDB4C5E00BB387E /* AddCoffeeOrderScreen.swift in Sources */,
+				D25053172CDB4C5100BB387E /* CoffeeOrder.swift in Sources */,
+				D250530B2CDB4AB400BB387E /* CoffeeOrderListViewModel.swift in Sources */,
+				D250530E2CDB4B0900BB387E /* CoffeeOrderListScreen.swift in Sources */,
+				D250531B2CDB4E0000BB387E /* CoffeeDetailScreen.swift in Sources */,
+				D250531D2CDB4F4F00BB387E /* APIs.swift in Sources */,
+				D25052FC2CDB46CD00BB387E /* HotCofeeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D25053042CDB46E800BB387E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D25053052CDB46E800BB387E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D25053072CDB46E800BB387E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HotCofee/Preview Content\"";
+				DEVELOPMENT_TEAM = A4VS9W3DA9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dj.www.HotCofee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D25053082CDB46E800BB387E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HotCofee/Preview Content\"";
+				DEVELOPMENT_TEAM = A4VS9W3DA9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dj.www.HotCofee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D25052F32CDB46CD00BB387E /* Build configuration list for PBXProject "HotCofee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25053042CDB46E800BB387E /* Debug */,
+				D25053052CDB46E800BB387E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D25053062CDB46E800BB387E /* Build configuration list for PBXNativeTarget "HotCofee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25053072CDB46E800BB387E /* Debug */,
+				D25053082CDB46E800BB387E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D25052F02CDB46CD00BB387E /* Project object */;
+}
