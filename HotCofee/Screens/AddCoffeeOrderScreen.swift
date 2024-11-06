@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AddCoffeeOrderScreen: View {
-    @Environment(CoffeeStore.self) private var coffeeStore
+    @Environment(OrderingStore.self) private var coffeeStore
     @Environment(\.httpClient) private var httpClient: HTTPClient
     @Environment(\.dismiss) private var dismiss
     

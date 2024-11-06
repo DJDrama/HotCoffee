@@ -12,7 +12,7 @@ import Observation
 // For larger apps we can create multiple stores based on the bounded context of the application
 // and NOT BASED ON THE SCREENS
 @Observable
-class CoffeeStore {
+class OrderingStore {
     
     // For mocking you can use protocol
     // ex) HTTPClientProtocol
@@ -35,4 +35,6 @@ class CoffeeStore {
         let savedCoffeeOrder = try await httpClient.load(resource)
         orders.append(savedCoffeeOrder)
     }
+    
+   
 }

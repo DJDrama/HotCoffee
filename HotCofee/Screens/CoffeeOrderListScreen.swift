@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CoffeeOrderListScreen: View {
     
-    @Environment(CoffeeStore.self) private var coffeeStore
+    @Environment(OrderingStore.self) private var coffeeStore
     @State private var isPresented: Bool = false
     
     
@@ -45,7 +45,7 @@ struct CoffeeOrderListScreen: View {
 #Preview {
     NavigationStack {
         CoffeeOrderListScreen()
-            .environment(CoffeeStore(httpClient: HTTPClient()))
+            .environment(OrderingStore(httpClient: HTTPClient()))
     }
 }
 

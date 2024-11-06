@@ -17,7 +17,10 @@
 		D250531B2CDB4E0000BB387E /* CoffeeDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250531A2CDB4E0000BB387E /* CoffeeDetailScreen.swift */; };
 		D250531D2CDB4F4F00BB387E /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250531C2CDB4F4F00BB387E /* APIs.swift */; };
 		D25053202CDB599B00BB387E /* HttpClientKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250531F2CDB599B00BB387E /* HttpClientKey.swift */; };
-		D25053232CDB608E00BB387E /* CoffeeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25053222CDB608E00BB387E /* CoffeeStore.swift */; };
+		D25053232CDB608E00BB387E /* OrderingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25053222CDB608E00BB387E /* OrderingStore.swift */; };
+		D25053252CDB6E0700BB387E /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25053242CDB6E0700BB387E /* Employee.swift */; };
+		D25053272CDB6F4200BB387E /* EmployeeManagementStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25053262CDB6F4200BB387E /* EmployeeManagementStore.swift */; };
+		D25053292CDB6FE300BB387E /* EmployeeManagementScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25053282CDB6FE300BB387E /* EmployeeManagementScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +35,10 @@
 		D250531A2CDB4E0000BB387E /* CoffeeDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailScreen.swift; sourceTree = "<group>"; };
 		D250531C2CDB4F4F00BB387E /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
 		D250531F2CDB599B00BB387E /* HttpClientKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientKey.swift; sourceTree = "<group>"; };
-		D25053222CDB608E00BB387E /* CoffeeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeStore.swift; sourceTree = "<group>"; };
+		D25053222CDB608E00BB387E /* OrderingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderingStore.swift; sourceTree = "<group>"; };
+		D25053242CDB6E0700BB387E /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		D25053262CDB6F4200BB387E /* EmployeeManagementStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeManagementStore.swift; sourceTree = "<group>"; };
+		D25053282CDB6FE300BB387E /* EmployeeManagementScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeManagementScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 				D250530D2CDB4B0900BB387E /* CoffeeOrderListScreen.swift */,
 				D25053182CDB4C5E00BB387E /* AddCoffeeOrderScreen.swift */,
 				D250531A2CDB4E0000BB387E /* CoffeeDetailScreen.swift */,
+				D25053282CDB6FE300BB387E /* EmployeeManagementScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -116,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				D25053162CDB4C5100BB387E /* CoffeeOrder.swift */,
+				D25053242CDB6E0700BB387E /* Employee.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -131,7 +139,8 @@
 		D25053212CDB608000BB387E /* Stores */ = {
 			isa = PBXGroup;
 			children = (
-				D25053222CDB608E00BB387E /* CoffeeStore.swift */,
+				D25053222CDB608E00BB387E /* OrderingStore.swift */,
+				D25053262CDB6F4200BB387E /* EmployeeManagementStore.swift */,
 			);
 			path = Stores;
 			sourceTree = "<group>";
@@ -209,11 +218,14 @@
 				D25053142CDB4C4000BB387E /* HttpClient.swift in Sources */,
 				D25053202CDB599B00BB387E /* HttpClientKey.swift in Sources */,
 				D25053192CDB4C5E00BB387E /* AddCoffeeOrderScreen.swift in Sources */,
+				D25053252CDB6E0700BB387E /* Employee.swift in Sources */,
 				D25053172CDB4C5100BB387E /* CoffeeOrder.swift in Sources */,
 				D250530E2CDB4B0900BB387E /* CoffeeOrderListScreen.swift in Sources */,
+				D25053292CDB6FE300BB387E /* EmployeeManagementScreen.swift in Sources */,
 				D250531B2CDB4E0000BB387E /* CoffeeDetailScreen.swift in Sources */,
 				D250531D2CDB4F4F00BB387E /* APIs.swift in Sources */,
-				D25053232CDB608E00BB387E /* CoffeeStore.swift in Sources */,
+				D25053272CDB6F4200BB387E /* EmployeeManagementStore.swift in Sources */,
+				D25053232CDB608E00BB387E /* OrderingStore.swift in Sources */,
 				D25052FC2CDB46CD00BB387E /* HotCofeeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

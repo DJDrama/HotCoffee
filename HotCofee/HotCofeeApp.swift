@@ -13,7 +13,9 @@ struct HotCofeeApp: App {
         WindowGroup {
             NavigationStack{
                 CoffeeOrderListScreen()
-            }.environment(CoffeeStore(httpClient: HTTPClient()))
+            }
+            .environment(OrderingStore(httpClient: HTTPClient()))
+            .environment(EmployeeManagementStore())
         }
     }
 }
